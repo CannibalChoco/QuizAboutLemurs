@@ -239,10 +239,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
+/*
     private void displayMessage(String message) {
         TextView scoreTextView = (TextView) findViewById(R.id.score_text_view);
         scoreTextView.setText(message);
     }
-
+*/
 }
