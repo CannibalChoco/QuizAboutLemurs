@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Lemur Quiz</string>
+
+    <string name="question1">What is a lemur?</string>
+
+    <string name="question2">Where can you find wild lemurs?</string>
+    <string name="q2_a1">Gambia</string>
+    <string name="q2_a2">Europe</string>
+    <string name="q2_a3">Madagascar</string>
+    <string name="q2_a4">Sri Lanka</string>
+
+    <string name="question3">Are lemurs ancestors of monkeys and apes?</string>
+    <string name="q3_a1">Yes</string>
+    <string name="q3_a2">No</string>
+
+
+    <string name="question4">How much can a lemur weigh? (Multiple answers)</string>
+    <string name="q4_a1">30g / 1.1oz</string>
+    <string name="q4_a2">9kg / 20lb</string>
+    <string name="q4_a3">50kg / 110lb</string>
+    <string name="q4_a4">200kg / 440lb</string>
+
+
+    <string name="question5">What do they eat? (Multiple answers)</string>
+    <string name="q5_a1">Insects</string>
+    <string name="q5_a2">Fruit and vegetables</string>
+    <string name="q5_a3">Plants</string>
+    <string name="q5_a4">Fish</string>
+
+    <string name="question6">How social are they?</string>
+    <string name="q6_a1">Very. They live in groups</string>
+    <string name="q6_a2">Not very social, they live in pairs</string>
+    <string name="q6_a3">They don\'t like company at all</string>
+
+    <string name="question7">How many fingers do they have total?</string>
+    <string name="q7_a1">18</string>
+    <string name="q7_a2">16</string>
+    <string name="q7_a3">20</string>
+    <string name="q7_a4">22</string>
+
+    <string name="question8">Is this a lemur?</string>
+    <string name="q8_a1">Yes</string>
+    <string name="q8_a2">No</string>
+
+</resources>
