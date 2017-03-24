@@ -39,7 +39,6 @@
                 android:id="@+id/radio_gambia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:paddingLeft="16dp"
                 android:text="@string/q2_a1"
                 android:textAppearance="?android:textAppearanceMedium" />
@@ -48,7 +47,6 @@
                 android:id="@+id/radio_europe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:paddingLeft="16dp"
                 android:text="@string/q2_a2"
                 android:textAppearance="?android:textAppearanceMedium" />
@@ -57,7 +55,6 @@
                 android:id="@+id/radio_madagascar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:paddingLeft="16dp"
                 android:text="@string/q2_a3"
                 android:textAppearance="?android:textAppearanceMedium" />
@@ -66,7 +63,6 @@
                 android:id="@+id/radio_sri_lanka"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:paddingLeft="16dp"
                 android:layout_marginBottom="16dp"
                 android:text="@string/q2_a4"
@@ -86,7 +82,6 @@
                 android:id="@+id/radio_ancestors_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:paddingLeft="16dp"
                 android:text="@string/q3_a1"
                 android:textAppearance="?android:textAppearanceMedium" />
@@ -95,7 +90,6 @@
                 android:id="@+id/radio_ancestors_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:paddingLeft="16dp"
                 android:layout_marginBottom="16dp"
                 android:text="@string/q3_a2"
@@ -193,16 +187,14 @@
                 android:id="@+id/radio_live_in_groups"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:paddingLeft="16dp"
                 android:text="@string/q6_a1"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
-                android:id="@+id/radio_Live_in_pairs"
+                android:id="@+id/radio_live_in_pairs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:paddingLeft="16dp"
                 android:text="@string/q6_a2"
                 android:textAppearance="?android:textAppearanceMedium" />
@@ -211,7 +203,6 @@
                 android:id="@+id/radio_live_alone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:paddingLeft="16dp"
                 android:layout_marginBottom="16dp"
                 android:text="@string/q6_a3"
@@ -231,7 +222,6 @@
                 android:id="@+id/radio_18_fingers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:paddingLeft="16dp"
                 android:text="@string/q7_a1"
                 android:textAppearance="?android:textAppearanceMedium" />
@@ -240,7 +230,6 @@
                 android:id="@+id/radio_16_fingers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:paddingLeft="16dp"
                 android:text="@string/q7_a2"
                 android:textAppearance="?android:textAppearanceMedium" />
@@ -249,7 +238,6 @@
                 android:id="@+id/radio_20_fingers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:paddingLeft="16dp"
                 android:text="@string/q7_a3"
                 android:textAppearance="?android:textAppearanceMedium" />
@@ -259,7 +247,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:onClick="onRadioButtonClicked"
                 android:paddingLeft="16dp"
                 android:text="@string/q7_a4"
                 android:textAppearance="?android:textAppearanceMedium" />
@@ -288,7 +275,6 @@
                 android:id="@+id/radio_is_lemur"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:paddingLeft="16dp"
                 android:text="@string/q8_a1"
                 android:textAppearance="?android:textAppearanceMedium" />
@@ -297,7 +283,6 @@
                 android:id="@+id/radio_not_lemur"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:paddingLeft="16dp"
                 android:text="@string/q8_a2"
                 android:textAppearance="?android:textAppearanceMedium" />
@@ -314,7 +299,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:onClick="countScore"
+            android:onClick="submitAnswers"
             android:text="Submit" />
 
         <Button
