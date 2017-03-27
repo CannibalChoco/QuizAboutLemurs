@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -11,6 +12,9 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     int score = 0;
+    String rightAnswer1 = "Animal";
+    //Q1
+    EditText answer1;
     //Q2
     RadioButton radioButtonVatican;
     RadioButton radioButtonEurope;
@@ -52,7 +56,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //Q1
+        answer1 = (EditText) findViewById(R.id.edit_text_answer1);
         // Q2
         radioButtonVatican = (RadioButton) findViewById(R.id.radio_gambia);
         radioButtonEurope = (RadioButton) findViewById(R.id.radio_europe);
@@ -113,6 +118,9 @@ public class MainActivity extends AppCompatActivity {
         boolean hasRadioButton20 = radioButton20.isChecked();
         boolean hasRadioButtonLemurYes = radioButtonLemurYes.isChecked();
 
+        if (answer1.getText().toString().equals(rightAnswer1)){
+            score++;
+        }
         if (hasRadioButtonMadagascar){
             score++;
         }
@@ -153,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
             score++;
         }
 
-        Toast.makeText(this, "Your score is: " + score + "/10", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Your score is: " + score + "/11", Toast.LENGTH_SHORT).show();
         //displayMessage("Your score is: " + score + "/10");
         //resetScore(view);
     }
@@ -233,6 +241,7 @@ public class MainActivity extends AppCompatActivity {
         if (checkboxFish.isChecked()) {
             checkboxFish.setChecked(false);
         }
+        answer1.setText("");
 
         Toast.makeText(this, "Answers are reset", Toast.LENGTH_SHORT).show();
        //displayMessage("Answers are reset");
