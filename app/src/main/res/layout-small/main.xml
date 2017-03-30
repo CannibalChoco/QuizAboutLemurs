@@ -51,7 +51,7 @@
                 <RadioButton
                     android:id="@+id/radio_vatican"
                     style="@style/CheckBoxAndRadioButtonStyle"
-                    android:text="@string/q2_a1" />
+                    android:text="@string/q2_a1"/>
 
                 <RadioButton
                     android:id="@+id/radio_europe"

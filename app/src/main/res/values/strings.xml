@@ -3,7 +3,7 @@
 
     <string name="question1">What is a lemur?</string>
 
-    <string name="question2">Where can you find wild lemurs?</string>
+    <string name="question2">Where do wild lemurs live?</string>
     <string name="q2_a1">Vatican</string>
     <string name="q2_a2">Europe</string>
     <string name="q2_a3">Madagascar</string>
@@ -25,11 +25,11 @@
     <string name="q5_a1">Insects</string>
     <string name="q5_a2">Fruit and vegetables</string>
     <string name="q5_a3">Plants</string>
-    <string name="q5_a4">Fish</string>
+    <string name="q5_a4">Dolphins</string>
 
     <string name="question6">How social are they?</string>
     <string name="q6_a1">Very. They live in groups</string>
-    <string name="q6_a2">Not very social, they live in pairs</string>
+    <string name="q6_a2">Not very, they live in pairs</string>
     <string name="q6_a3">They don\'t like company at all</string>
 
     <string name="question7">How many fingers do they have total?</string>
