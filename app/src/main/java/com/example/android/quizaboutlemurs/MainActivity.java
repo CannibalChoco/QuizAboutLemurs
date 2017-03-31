@@ -18,7 +18,7 @@ import static com.example.android.quizaboutlemurs.R.string.question8;
 public class MainActivity extends AppCompatActivity {
 
     int score = 0;
-    String rightAnswer1 = "Animal";
+    String rightAnswer1 = "Animal", rightAnswer2 = "Dzīvnieks";
     //Q1
     EditText answer1;
 
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Q5
     CheckBox checkboxInsects;
-    CheckBox checkboxFruitAndVegetables;
+    CheckBox checkboxFruit;
     CheckBox checkboxPlants;
     CheckBox checkboxFish;
 
@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
     // Q8
     RadioButton radioButtonLemurYes;
     RadioButton radioButtonLemurNo;
+
 
 
     @Override
@@ -81,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         checkbox200kg = (CheckBox) findViewById(R.id.checkbox_200kg);
         // Q5
         checkboxInsects = (CheckBox) findViewById(R.id.checkbox_insects);
-        checkboxFruitAndVegetables = (CheckBox) findViewById(R.id.checkbox_fruit_vegetables);
+        checkboxFruit = (CheckBox) findViewById(R.id.checkbox_fruit);
         checkboxPlants = (CheckBox) findViewById(R.id.checkbox_plants);
         checkboxFish = (CheckBox) findViewById(R.id.checkbox_fish);
         // Q6
@@ -110,68 +111,82 @@ public class MainActivity extends AppCompatActivity {
         score = savedInstanceState.getInt("score");
     }
 
+    /**
+     * This method checks the selected answers and sets visibility to corresponding
+     * correct/incorrect image
+     */
     public void submitAnswers (View view){
+
+        //Q1
         ImageView question1 = (ImageView) findViewById(R.id.image_view_q1);
+        //Q2
+        ImageView question2Answer1 = (ImageView) findViewById(R.id.image_view_q2_a1);
+        ImageView question2Answer2 = (ImageView) findViewById(R.id.image_view_q2_a2);
+        ImageView question2Answer3 = (ImageView) findViewById(R.id.image_view_q2_a3);
+        ImageView question2Answer4 = (ImageView) findViewById(R.id.image_view_q2_a4);
+        //Q3
+        ImageView question3Answer1 = (ImageView) findViewById(R.id.image_view_q3_a1);
+        ImageView question3Answer2 = (ImageView) findViewById(R.id.image_view_q3_a2);
+        //Q4
+        ImageView question4Answer1 = (ImageView) findViewById(R.id.image_view_q4_a1);
+        ImageView question4Answer2 = (ImageView) findViewById(R.id.image_view_q4_a2);
+        ImageView question4Answer3 = (ImageView) findViewById(R.id.image_view_q4_a3);
+        ImageView question4Answer4 = (ImageView) findViewById(R.id.image_view_q4_a4);
+        //Q5
+        ImageView question5Answer1 = (ImageView) findViewById(R.id.image_view_q5_a1);
+        ImageView question5Answer2 = (ImageView) findViewById(R.id.image_view_q5_a2);
+        ImageView question5Answer3 = (ImageView) findViewById(R.id.image_view_q5_a3);
+        ImageView question5Answer4 = (ImageView) findViewById(R.id.image_view_q5_a4);
+        //Q6
+        ImageView question6Answer1 = (ImageView) findViewById(R.id.image_view_q6_a1);
+        ImageView question6Answer2 = (ImageView) findViewById(R.id.image_view_q6_a2);
+        ImageView question6Answer3 = (ImageView) findViewById(R.id.image_view_q6_a3);
+        //Q7
+        ImageView question7Answer1 = (ImageView) findViewById(R.id.image_view_q7_a1);
+        ImageView question7Answer2 = (ImageView) findViewById(R.id.image_view_q7_a2);
+        ImageView question7Answer3 = (ImageView) findViewById(R.id.image_view_q7_a3);
+        ImageView question7Answer4 = (ImageView) findViewById(R.id.image_view_q7_a4);
+        //Q8
+        ImageView question8Answer1 = (ImageView) findViewById(R.id.image_view_q8_a1);
+        ImageView question8Answer2 = (ImageView) findViewById(R.id.image_view_q8_a2);
+
+
         // Q2
         boolean hasRadioButtonVatican = radioButtonVatican.isChecked();
         boolean hasRadioButtonEurope = radioButtonEurope.isChecked();
         boolean hasRadioButtonMadagascar = radioButtonMadagascar.isChecked();
         boolean hasRadioButtonSriLanka = radioButtonSriLanka.isChecked();
 
-        ImageView question2Answer1 = (ImageView) findViewById(R.id.image_view_q2_a1);
-        ImageView question2Answer2 = (ImageView) findViewById(R.id.image_view_q2_a2);
-        ImageView question2Answer3 = (ImageView) findViewById(R.id.image_view_q2_a3);
-        ImageView question2Answer4 = (ImageView) findViewById(R.id.image_view_q2_a4);
         //Q3
         boolean hasRadioButtonAncestorsYes = radioButtonAncestorsYes.isChecked();
         boolean hasRadioButtonAncestorsNo = radioButtonAncestorsNo.isChecked();
 
-        ImageView question3Answer1 = (ImageView) findViewById(R.id.image_view_q3_a1);
-        ImageView question3Answer2 = (ImageView) findViewById(R.id.image_view_q3_a2);
         //Q4
         boolean hasCheckbox30g = checkbox30g.isChecked();
         boolean hasCheckbox9kg = checkbox9kg.isChecked();
         boolean hasCheckbox50kg = checkbox50kg.isChecked();
         boolean hasCheckbox200kg = checkbox200kg.isChecked();
 
-        ImageView question4Answer1 = (ImageView) findViewById(R.id.image_view_q4_a1);
-        ImageView question4Answer2 = (ImageView) findViewById(R.id.image_view_q4_a2);
-        ImageView question4Answer3 = (ImageView) findViewById(R.id.image_view_q4_a3);
-        ImageView question4Answer4 = (ImageView) findViewById(R.id.image_view_q4_a4);
         //Q5
         boolean hasCheckboxInsects = checkboxInsects.isChecked();
-        boolean hasCheckboxFruitAndVegetables = checkboxFruitAndVegetables.isChecked();
+        boolean hasCheckboxFruit = checkboxFruit.isChecked();
         boolean hasCheckboxPlants = checkboxPlants.isChecked();
         boolean hasCheckboxFish = checkboxFish.isChecked();
 
-        ImageView question5Answer1 = (ImageView) findViewById(R.id.image_view_q5_a1);
-        ImageView question5Answer2 = (ImageView) findViewById(R.id.image_view_q5_a2);
-        ImageView question5Answer3 = (ImageView) findViewById(R.id.image_view_q5_a3);
-        ImageView question5Answer4 = (ImageView) findViewById(R.id.image_view_q5_a4);
         //Q6
         boolean hasRadioButtonVerySocial = radioButtonVerySocial.isChecked();
         boolean hasRadioButtonNotVerySocial = radioButtonNotVerySocial.isChecked();
         boolean hasRadioButtonNotSocial = radioButtonNotSocial.isChecked();
 
-        ImageView question6Answer1 = (ImageView) findViewById(R.id.image_view_q6_a1);
-        ImageView question6Answer2 = (ImageView) findViewById(R.id.image_view_q6_a2);
-        ImageView question6Answer3 = (ImageView) findViewById(R.id.image_view_q6_a3);
         //Q7
         boolean hasRadioButton18 = radioButton18.isChecked();
         boolean hasRadioButton16 = radioButton16.isChecked();
         boolean hasRadioButton20 = radioButton20.isChecked();
         boolean hasRadioButton22 = radioButton22.isChecked();
 
-        ImageView question7Answer1 = (ImageView) findViewById(R.id.image_view_q7_a1);
-        ImageView question7Answer2 = (ImageView) findViewById(R.id.image_view_q7_a2);
-        ImageView question7Answer3 = (ImageView) findViewById(R.id.image_view_q7_a3);
-        ImageView question7Answer4 = (ImageView) findViewById(R.id.image_view_q7_a4);
         //Q8
         boolean hasRadioButtonLemurYes = radioButtonLemurYes.isChecked();
         boolean hasRadioButtonLemurNo = radioButtonLemurNo.isChecked();
-
-        ImageView question8Answer1 = (ImageView) findViewById(R.id.image_view_q8_a1);
-        ImageView question8Answer2 = (ImageView) findViewById(R.id.image_view_q8_a2);
 
         //Q1
         if (answer1.getText().toString().equals(rightAnswer1)){
@@ -231,7 +246,7 @@ public class MainActivity extends AppCompatActivity {
             score++;
             question5Answer1.setVisibility(View.VISIBLE);
         }
-        if (hasCheckboxFruitAndVegetables){
+        if (hasCheckboxFruit){
             score++;
             question5Answer2.setVisibility(View.VISIBLE);
         }
@@ -284,8 +299,14 @@ public class MainActivity extends AppCompatActivity {
         //resetScore(view);
     }
 
+
+    /**
+     * Method to clear answers. It also sets the correct/incorrect images
+     * to invisible
+     */
     public void resetAll (View view){
         score = 0;
+
         //Q1
         ImageView question1 = (ImageView) findViewById(R.id.image_view_q1);
         //Q2
@@ -318,6 +339,7 @@ public class MainActivity extends AppCompatActivity {
         //Q8
         ImageView question8Answer1 = (ImageView) findViewById(R.id.image_view_q8_a1);
         ImageView question8Answer2 = (ImageView) findViewById(R.id.image_view_q8_a2);
+
 
         //Q1
         answer1.setText("");
@@ -370,8 +392,8 @@ public class MainActivity extends AppCompatActivity {
             checkboxInsects.setChecked(false);
             question5Answer1.setVisibility(View.INVISIBLE);
         }
-        if (checkboxFruitAndVegetables.isChecked()) {
-            checkboxFruitAndVegetables.setChecked(false);
+        if (checkboxFruit.isChecked()) {
+            checkboxFruit.setChecked(false);
             question5Answer2.setVisibility(View.INVISIBLE);
         }
         if (checkboxPlants.isChecked()) {
