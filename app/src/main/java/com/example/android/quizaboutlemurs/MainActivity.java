@@ -18,7 +18,7 @@ import static com.example.android.quizaboutlemurs.R.string.question8;
 public class MainActivity extends AppCompatActivity {
 
     int score = 0;
-    String rightAnswer1 = "Animal", rightAnswer2 = "Dzīvnieks";
+    String rightAnswerEn = "Animal", rightAnswerLv = "Dzīvnieks";
     //Q1
     EditText answer1;
 
@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
     RadioButton radioButtonSriLanka;
 
     // Q3
-    RadioButton radioButtonAncestorsYes;
-    RadioButton radioButtonAncestorsNo;
+    RadioButton radioButtonMonkeysYes;
+    RadioButton radioButtonMonkeysNo;
 
     // Q4
     CheckBox checkbox30g;
@@ -73,8 +73,8 @@ public class MainActivity extends AppCompatActivity {
         radioButtonMadagascar = (RadioButton) findViewById(R.id.radio_madagascar);
         radioButtonSriLanka = (RadioButton) findViewById(R.id.radio_sri_lanka);
         // Q3
-        radioButtonAncestorsYes = (RadioButton) findViewById(R.id.radio_ancestors_yes);
-        radioButtonAncestorsNo = (RadioButton) findViewById(R.id.radio_ancestors_no);
+        radioButtonMonkeysYes = (RadioButton) findViewById(R.id.radio_monkeys_yes);
+        radioButtonMonkeysNo = (RadioButton) findViewById(R.id.radio_monkeys_no);
         // Q4
         checkbox30g = (CheckBox) findViewById(R.id.checkbox_30g);
         checkbox9kg = (CheckBox) findViewById(R.id.checkbox_9kg);
@@ -158,8 +158,8 @@ public class MainActivity extends AppCompatActivity {
         boolean hasRadioButtonSriLanka = radioButtonSriLanka.isChecked();
 
         //Q3
-        boolean hasRadioButtonAncestorsYes = radioButtonAncestorsYes.isChecked();
-        boolean hasRadioButtonAncestorsNo = radioButtonAncestorsNo.isChecked();
+        boolean hasRadioButtonMonkeysYes = radioButtonMonkeysYes.isChecked();
+        boolean hasRadioButtonMonkeysNo = radioButtonMonkeysNo.isChecked();
 
         //Q4
         boolean hasCheckbox30g = checkbox30g.isChecked();
@@ -189,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
         boolean hasRadioButtonLemurNo = radioButtonLemurNo.isChecked();
 
         //Q1
-        if (answer1.getText().toString().equals(rightAnswer1)){
+        if ((answer1.getText().toString().equals(rightAnswerEn)) || (answer1.getText().toString().equals(rightAnswerLv))){
             score++;
             question1.setImageResource(R.drawable.correct);
             question1.setVisibility(View.VISIBLE);
@@ -213,10 +213,10 @@ public class MainActivity extends AppCompatActivity {
             question2Answer4.setVisibility(View.VISIBLE);
         }
         //Q3
-        if (hasRadioButtonAncestorsYes){
+        if (hasRadioButtonMonkeysYes){
             question3Answer1.setVisibility(View.VISIBLE);
         }
-        if (hasRadioButtonAncestorsNo){
+        if (hasRadioButtonMonkeysNo){
             score++;
             question3Answer2.setVisibility(View.VISIBLE);
         }
@@ -295,10 +295,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         Toast.makeText(this, "Your score is: " + score + "/11", Toast.LENGTH_SHORT).show();
-        //displayMessage("Your score is: " + score + "/10");
-        //resetScore(view);
-    }
 
+    }
 
     /**
      * Method to clear answers. It also sets the correct/incorrect images
@@ -362,12 +360,12 @@ public class MainActivity extends AppCompatActivity {
             question2Answer4.setVisibility(View.INVISIBLE);
         }
         //Q3
-        if (radioButtonAncestorsYes.isChecked()){
-            radioButtonAncestorsYes.setChecked(false);
+        if (radioButtonMonkeysYes.isChecked()){
+            radioButtonMonkeysYes.setChecked(false);
             question3Answer1.setVisibility(View.INVISIBLE);
         }
-        if (radioButtonAncestorsNo.isChecked()){
-            radioButtonAncestorsNo.setChecked(false);
+        if (radioButtonMonkeysNo.isChecked()){
+            radioButtonMonkeysNo.setChecked(false);
             question3Answer2.setVisibility(View.INVISIBLE);
         }
         //Q4
@@ -444,7 +442,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         Toast.makeText(this, "Answers are reset", Toast.LENGTH_SHORT).show();
-        //displayMessage("Answers are reset");
     }
 
 /*

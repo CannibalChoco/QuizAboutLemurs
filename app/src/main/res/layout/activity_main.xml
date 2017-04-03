@@ -13,9 +13,17 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin">
 
-        <TextView
-            style="@style/QuestionTextStyle"
-            android:text="@string/question1" />
+        <LinearLayout style="@style/QuestionLayoutStyle">
+
+            <TextView
+                style="@style/QuestionNrStyle"
+                android:text="1" />
+
+            <TextView
+                style="@style/QuestionTextStyle"
+                android:text="@string/question1" />
+
+        </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -37,10 +45,17 @@
                 android:src="@drawable/incorrect" />
         </RelativeLayout>
 
+        <LinearLayout style="@style/QuestionLayoutStyle">
 
-        <TextView
-            style="@style/QuestionTextStyle"
-            android:text="@string/question2" />
+            <TextView
+                style="@style/QuestionNrStyle"
+                android:text="2" />
+
+            <TextView
+                style="@style/QuestionTextStyle"
+                android:text="@string/question2" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -98,9 +113,17 @@
             </RelativeLayout>
         </LinearLayout>
 
-        <TextView
-            style="@style/QuestionTextStyle"
-            android:text="@string/question3" />
+        <LinearLayout style="@style/QuestionLayoutStyle">
+
+            <TextView
+                style="@style/QuestionNrStyle"
+                android:text="3" />
+
+            <TextView
+                style="@style/QuestionTextStyle"
+                android:text="@string/question3" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -109,12 +132,12 @@
             <RadioGroup style="@style/RadioGroupStyle">
 
                 <RadioButton
-                    android:id="@+id/radio_ancestors_yes"
+                    android:id="@+id/radio_monkeys_yes"
                     style="@style/CheckBoxAndRadioButtonStyle"
                     android:text="@string/q3_a1" />
 
                 <RadioButton
-                    android:id="@+id/radio_ancestors_no"
+                    android:id="@+id/radio_monkeys_no"
                     style="@style/CheckBoxAndRadioButtonStyle"
                     android:text="@string/q3_a2" />
             </RadioGroup>
@@ -136,9 +159,17 @@
             </RelativeLayout>
         </LinearLayout>
 
-        <TextView
-            style="@style/QuestionTextStyle"
-            android:text="@string/question4" />
+        <LinearLayout style="@style/QuestionLayoutStyle">
+
+            <TextView
+                style="@style/QuestionNrStyle"
+                android:text="4" />
+
+            <TextView
+                style="@style/QuestionTextStyle"
+                android:text="@string/question4" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -197,9 +228,17 @@
             </RelativeLayout>
         </LinearLayout>
 
-        <TextView
-            style="@style/QuestionTextStyle"
-            android:text="@string/question5" />
+        <LinearLayout style="@style/QuestionLayoutStyle">
+
+            <TextView
+                style="@style/QuestionNrStyle"
+                android:text="5" />
+
+            <TextView
+                style="@style/QuestionTextStyle"
+                android:text="@string/question5" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -258,10 +297,17 @@
             </RelativeLayout>
         </LinearLayout>
 
+        <LinearLayout style="@style/QuestionLayoutStyle">
 
-        <TextView
-            style="@style/QuestionTextStyle"
-            android:text="@string/question6" />
+            <TextView
+                style="@style/QuestionNrStyle"
+                android:text="6" />
+
+            <TextView
+                style="@style/QuestionTextStyle"
+                android:text="@string/question6" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -308,9 +354,17 @@
             </RelativeLayout>
         </LinearLayout>
 
-        <TextView
-            style="@style/QuestionTextStyle"
-            android:text="@string/question7" />
+        <LinearLayout style="@style/QuestionLayoutStyle">
+
+            <TextView
+                style="@style/QuestionNrStyle"
+                android:text="7" />
+
+            <TextView
+                style="@style/QuestionTextStyle"
+                android:text="@string/question7" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -375,9 +429,17 @@
             android:background="@color/colorPrimaryLight"
             android:orientation="vertical">
 
-            <TextView
-                style="@style/QuestionTextStyle"
-                android:text="@string/question8" />
+            <LinearLayout style="@style/QuestionLayoutStyle">
+
+                <TextView
+                    style="@style/QuestionNrStyle"
+                    android:text="8" />
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="@string/question8" />
+
+            </LinearLayout>
 
             <ImageView
                 android:layout_width="match_parent"

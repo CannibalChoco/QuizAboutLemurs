@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tests par lemuriem</string>
+
+    <string name="question1">Kas ir lemurs?</string>
+
+    <string name="question2">Kur dzīvo savvaļas lemuri?</string>
+    <string name="q2_a1">Vatikānā</string>
+    <string name="q2_a2">Eiropā</string>
+    <string name="q2_a3">Madagaskarā</string>
+    <string name="q2_a4">Šrilankā</string>
+
+    <string name="question3">Vai lemuri ir mērkaķi?</string>
+    <string name="q3_a1">Jā</string>
+    <string name="q3_a2">Nē</string>
+
+
+    <string name="question4">Cik daudz lemurs var svērt? (Vairākas atbildes)</string>
+    <string name="q4_a1">30g</string>
+    <string name="q4_a2">9kg</string>
+    <string name="q4_a3">50kg</string>
+    <string name="q4_a4">200kg</string>
+
+
+    <string name="question5">Ko viņi ēd? (Vairākas atbildes)</string>
+    <string name="q5_a1">Kukaiņus</string>
+    <string name="q5_a2">Augļus</string>
+    <string name="q5_a3">Augus</string>
+    <string name="q5_a4">Delfīnus</string>
+
+    <string name="question6">Cik viņi ir sabiedriski?</string>
+    <string name="q6_a1">Uzturas grupās</string>
+    <string name="q6_a2">Dzīvo pa pāriem</string>
+    <string name="q6_a3">Dzīvo vienatnē</string>
+
+    <string name="question7">Cik lemuriem ir pirkstu?</string>
+    <string name="q7_a1">18</string>
+    <string name="q7_a2">16</string>
+    <string name="q7_a3">20</string>
+    <string name="q7_a4">22</string>
+
+    <string name="question8">Vai šis ir lemurs?</string>
+    <string name="q8_a1">Jā</string>
+    <string name="q8_a2">Nē</string>
+
+    <string name="submitButton">Iesniegt</string>
+    <string name="resetButton">Nodzēst</string>
+
+</resources>
