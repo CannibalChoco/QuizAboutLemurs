@@ -2,7 +2,12 @@
 <resources>
     <string name="app_name">Tests par lemuriem</string>
 
+    <string name="toast_submit1">Tavi punkti: </string>
+    <string name="toast_submit2">/11</string>
+    <string name="toast_reset">Atbildes ir nodzēstas</string>
+
     <string name="question1">Kas ir lemurs?</string>
+    <string name="hint">kontinents, dzīvnieks, ierīce ...</string>
 
     <string name="question2">Kur dzīvo savvaļas lemuri?</string>
     <string name="q2_a1">Vatikānā</string>
