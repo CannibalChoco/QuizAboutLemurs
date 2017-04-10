@@ -8,6 +8,7 @@
 
     <string name="question1">Kas ir lemurs?</string>
     <string name="hint">kontinents, dzīvnieks, ierīce ...</string>
+    <string name="q1_a">Dzīvnieks</string>
 
     <string name="question2">Kur dzīvo savvaļas lemuri?</string>
     <string name="q2_a1">Vatikānā</string>

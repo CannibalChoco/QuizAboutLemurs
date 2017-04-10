@@ -7,8 +7,7 @@
 
     <string name="question1">What is a lemur?</string>
     <string name="hint">continent, animal, gadget ...</string>
-    <string name="q1_a_en">Animal</string>
-    <string name="q1_a_lv">Dzīvnieks</string>
+    <string name="q1_a">Animal</string>
 
     <string name="question2">Where do wild lemurs live?</string>
     <string name="q2_a1">Vatican</string>

@@ -19,8 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     int score = 0;
 
-    String rightAnswerEn;
-    String rightAnswerLv;
+    String rightAnswer;
 
     //Q1
     EditText answer1;
@@ -95,8 +94,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Q1
         answer1 = (EditText) findViewById(R.id.edit_text_answer1);
-        rightAnswerLv = getString(R.string.q1_a_lv);
-        rightAnswerEn = getString(R.string.q1_a_en);
+        rightAnswer = getString(R.string.q1_a);
 
         // Q2
         radioButtonVatican = (RadioButton) findViewById(R.id.radio_vatican);
@@ -183,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
         score = 0;
 
         //Q1
-        if ((answer1.getText().toString().equals(rightAnswerEn)) || (answer1.getText().toString().equals(rightAnswerLv))) {
+        if (answer1.getText().toString().equals(rightAnswer)) {
             score++;
             question1.setImageResource(R.drawable.correct);
             question1.setVisibility(View.VISIBLE);
