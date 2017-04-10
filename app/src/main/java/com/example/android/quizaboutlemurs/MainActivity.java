@@ -182,43 +182,6 @@ public class MainActivity extends AppCompatActivity {
     public void submitAnswers(View view) {
         score = 0;
 
-        // Q2
-        boolean hasRadioButtonVatican = radioButtonVatican.isChecked();
-        boolean hasRadioButtonEurope = radioButtonEurope.isChecked();
-        boolean hasRadioButtonMadagascar = radioButtonMadagascar.isChecked();
-        boolean hasRadioButtonSriLanka = radioButtonSriLanka.isChecked();
-
-        //Q3
-        boolean hasRadioButtonMonkeysYes = radioButtonMonkeysYes.isChecked();
-        boolean hasRadioButtonMonkeysNo = radioButtonMonkeysNo.isChecked();
-
-        //Q4
-        boolean hasCheckbox30g = checkbox30g.isChecked();
-        boolean hasCheckbox9kg = checkbox9kg.isChecked();
-        boolean hasCheckbox50kg = checkbox50kg.isChecked();
-        boolean hasCheckbox200kg = checkbox200kg.isChecked();
-
-        //Q5
-        boolean hasCheckboxInsects = checkboxInsects.isChecked();
-        boolean hasCheckboxFruit = checkboxFruit.isChecked();
-        boolean hasCheckboxPlants = checkboxPlants.isChecked();
-        boolean hasCheckboxFish = checkboxFish.isChecked();
-
-        //Q6
-        boolean hasRadioButtonVerySocial = radioButtonVerySocial.isChecked();
-        boolean hasRadioButtonNotVerySocial = radioButtonNotVerySocial.isChecked();
-        boolean hasRadioButtonNotSocial = radioButtonNotSocial.isChecked();
-
-        //Q7
-        boolean hasRadioButton18 = radioButton18.isChecked();
-        boolean hasRadioButton16 = radioButton16.isChecked();
-        boolean hasRadioButton20 = radioButton20.isChecked();
-        boolean hasRadioButton22 = radioButton22.isChecked();
-
-        //Q8
-        boolean hasRadioButtonLemurYes = radioButtonLemurYes.isChecked();
-        boolean hasRadioButtonLemurNo = radioButtonLemurNo.isChecked();
-
         //Q1
         if ((answer1.getText().toString().equals(rightAnswerEn)) || (answer1.getText().toString().equals(rightAnswerLv))) {
             score++;
@@ -229,98 +192,98 @@ public class MainActivity extends AppCompatActivity {
             question1.setVisibility(View.VISIBLE);
         }
         //Q2
-        if (hasRadioButtonVatican) {
+        if (radioButtonVatican.isChecked()) {
             question2Answer1.setVisibility(View.VISIBLE);
         }
-        if (hasRadioButtonEurope) {
+        if (radioButtonEurope.isChecked()) {
             question2Answer2.setVisibility(View.VISIBLE);
         }
-        if (hasRadioButtonMadagascar) {
+        if (radioButtonMadagascar.isChecked()) {
             score++;
             question2Answer3.setVisibility(View.VISIBLE);
         }
-        if (hasRadioButtonSriLanka) {
+        if (radioButtonSriLanka.isChecked()) {
             question2Answer4.setVisibility(View.VISIBLE);
         }
         //Q3
-        if (hasRadioButtonMonkeysYes) {
+        if (radioButtonMonkeysYes.isChecked()) {
             question3Answer1.setVisibility(View.VISIBLE);
         }
-        if (hasRadioButtonMonkeysNo) {
+        if (radioButtonMonkeysNo.isChecked()) {
             score++;
             question3Answer2.setVisibility(View.VISIBLE);
         }
         //Q4
-        if (hasCheckbox30g) {
+        if (checkbox30g.isChecked()) {
             score++;
             question4Answer1.setVisibility(View.VISIBLE);
         }
-        if (hasCheckbox9kg) {
+        if (checkbox9kg.isChecked()) {
             score++;
             question4Answer2.setVisibility(View.VISIBLE);
         }
-        if (hasCheckbox50kg) {
+        if (checkbox50kg.isChecked()) {
             if (score > 0) {
                 score--;
             }
             question4Answer3.setVisibility(View.VISIBLE);
         }
-        if (hasCheckbox200kg) {
+        if (checkbox200kg.isChecked()) {
             if (score > 0) {
                 score--;
             }
             question4Answer4.setVisibility(View.VISIBLE);
         }
         //Q5
-        if (hasCheckboxInsects) {
+        if (checkboxInsects.isChecked()) {
             score++;
             question5Answer1.setVisibility(View.VISIBLE);
         }
-        if (hasCheckboxFruit) {
+        if (checkboxFruit.isChecked()) {
             score++;
             question5Answer2.setVisibility(View.VISIBLE);
         }
-        if (hasCheckboxPlants) {
+        if (checkboxPlants.isChecked()) {
             score++;
             question5Answer3.setVisibility(View.VISIBLE);
         }
-        if (hasCheckboxFish) {
+        if (checkboxFish.isChecked()) {
             if (score > 0) {
                 score--;
             }
             question5Answer4.setVisibility(View.VISIBLE);
         }
         //Q6
-        if (hasRadioButtonVerySocial) {
+        if (radioButtonVerySocial.isChecked()) {
             score++;
             question6Answer1.setVisibility(View.VISIBLE);
         }
-        if (hasRadioButtonNotVerySocial) {
+        if (radioButtonNotVerySocial.isChecked()) {
             question6Answer2.setVisibility(View.VISIBLE);
         }
-        if (hasRadioButtonNotSocial) {
+        if (radioButtonNotSocial.isChecked()) {
             question6Answer3.setVisibility(View.VISIBLE);
         }
         //Q7
-        if (hasRadioButton18) {
+        if (radioButton18.isChecked()) {
             question7Answer1.setVisibility(View.VISIBLE);
         }
-        if (hasRadioButton16) {
+        if (radioButton16.isChecked()) {
             question7Answer2.setVisibility(View.VISIBLE);
         }
-        if (hasRadioButton20) {
+        if (radioButton20.isChecked()) {
             score++;
             question7Answer3.setVisibility(View.VISIBLE);
         }
-        if (hasRadioButton22) {
+        if (radioButton22.isChecked()) {
             question7Answer4.setVisibility(View.VISIBLE);
         }
         //Q8
-        if (hasRadioButtonLemurYes) {
+        if (radioButtonLemurYes.isChecked()) {
             score++;
             question8Answer1.setVisibility(View.VISIBLE);
         }
-        if (hasRadioButtonLemurNo) {
+        if (radioButtonLemurNo.isChecked()) {
             question8Answer2.setVisibility(View.VISIBLE);
         }
 
