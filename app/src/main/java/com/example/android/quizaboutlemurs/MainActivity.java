@@ -9,16 +9,10 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-import static com.example.android.quizaboutlemurs.R.string.question1;
-import static com.example.android.quizaboutlemurs.R.string.question2;
-import static com.example.android.quizaboutlemurs.R.string.question6;
-import static com.example.android.quizaboutlemurs.R.string.question7;
-import static com.example.android.quizaboutlemurs.R.string.question8;
 
 public class MainActivity extends AppCompatActivity {
 
     int score = 0;
-
     String rightAnswer;
 
     //Q1
@@ -403,10 +397,4 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
-/*
-    private void displayMessage(String message) {
-        TextView scoreTextView = (TextView) findViewById(R.id.score_text_view);
-        scoreTextView.setText(message);
-    }
-*/
 }

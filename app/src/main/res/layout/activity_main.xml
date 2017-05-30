@@ -431,14 +431,8 @@
             </LinearLayout>
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="@color/colorPrimaryLight"
-                android:scaleType="centerCrop"
-                android:src="@drawable/lemur" />
+                android:src="@drawable/lemur"
+                style="@style/ImageViewStyle" />
         </LinearLayout>
 
         <LinearLayout
