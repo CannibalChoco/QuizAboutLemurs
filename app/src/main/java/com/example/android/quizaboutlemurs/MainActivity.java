@@ -183,6 +183,7 @@ public class MainActivity extends AppCompatActivity {
             question1.setImageResource(R.drawable.incorrect);
             question1.setVisibility(View.VISIBLE);
         }
+
         //Q2
         if (radioButtonVatican.isChecked()) {
             question2Answer1.setVisibility(View.VISIBLE);
@@ -197,6 +198,7 @@ public class MainActivity extends AppCompatActivity {
         if (radioButtonSriLanka.isChecked()) {
             question2Answer4.setVisibility(View.VISIBLE);
         }
+
         //Q3
         if (radioButtonMonkeysYes.isChecked()) {
             question3Answer1.setVisibility(View.VISIBLE);
@@ -205,6 +207,7 @@ public class MainActivity extends AppCompatActivity {
             score++;
             question3Answer2.setVisibility(View.VISIBLE);
         }
+
         //Q4
         if (checkbox30g.isChecked()) {
             score++;
@@ -215,17 +218,20 @@ public class MainActivity extends AppCompatActivity {
             question4Answer2.setVisibility(View.VISIBLE);
         }
         if (checkbox50kg.isChecked()) {
+            // user doesn't get maximum points by checking all the checkboxes
             if (score > 0) {
                 score--;
             }
             question4Answer3.setVisibility(View.VISIBLE);
         }
         if (checkbox200kg.isChecked()) {
+            // user doesn't get maximum points by checking all the checkboxes
             if (score > 0) {
                 score--;
             }
             question4Answer4.setVisibility(View.VISIBLE);
         }
+
         //Q5
         if (checkboxInsects.isChecked()) {
             score++;
@@ -241,10 +247,12 @@ public class MainActivity extends AppCompatActivity {
         }
         if (checkboxFish.isChecked()) {
             if (score > 0) {
+                // user doesn't get maximum points by checking all the checkboxes
                 score--;
             }
             question5Answer4.setVisibility(View.VISIBLE);
         }
+
         //Q6
         if (radioButtonVerySocial.isChecked()) {
             score++;
@@ -256,6 +264,7 @@ public class MainActivity extends AppCompatActivity {
         if (radioButtonNotSocial.isChecked()) {
             question6Answer3.setVisibility(View.VISIBLE);
         }
+
         //Q7
         if (radioButton18.isChecked()) {
             question7Answer1.setVisibility(View.VISIBLE);
@@ -270,6 +279,7 @@ public class MainActivity extends AppCompatActivity {
         if (radioButton22.isChecked()) {
             question7Answer4.setVisibility(View.VISIBLE);
         }
+
         //Q8
         if (radioButtonLemurYes.isChecked()) {
             score++;
@@ -294,6 +304,7 @@ public class MainActivity extends AppCompatActivity {
         //Q1
         answer1.setText("");
         question1.setVisibility(View.INVISIBLE);
+
         //Q2
         if (radioButtonVatican.isChecked()) {
             radioButtonVatican.setChecked(false);
@@ -311,6 +322,7 @@ public class MainActivity extends AppCompatActivity {
             radioButtonSriLanka.setChecked(false);
             question2Answer4.setVisibility(View.INVISIBLE);
         }
+
         //Q3
         if (radioButtonMonkeysYes.isChecked()) {
             radioButtonMonkeysYes.setChecked(false);
@@ -320,6 +332,7 @@ public class MainActivity extends AppCompatActivity {
             radioButtonMonkeysNo.setChecked(false);
             question3Answer2.setVisibility(View.INVISIBLE);
         }
+
         //Q4
         if (checkbox30g.isChecked()) {
             checkbox30g.setChecked(false);
@@ -337,6 +350,7 @@ public class MainActivity extends AppCompatActivity {
             checkbox200kg.setChecked(false);
             question4Answer4.setVisibility(View.INVISIBLE);
         }
+
         //Q5
         if (checkboxInsects.isChecked()) {
             checkboxInsects.setChecked(false);
@@ -354,6 +368,7 @@ public class MainActivity extends AppCompatActivity {
             checkboxFish.setChecked(false);
             question5Answer4.setVisibility(View.INVISIBLE);
         }
+
         //Q6
         if (radioButtonVerySocial.isChecked()) {
             radioButtonVerySocial.setChecked(false);
@@ -367,6 +382,7 @@ public class MainActivity extends AppCompatActivity {
             radioButtonNotSocial.setChecked(false);
             question6Answer3.setVisibility(View.INVISIBLE);
         }
+
         //Q7
         if (radioButton18.isChecked()) {
             radioButton18.setChecked(false);
@@ -384,6 +400,8 @@ public class MainActivity extends AppCompatActivity {
             radioButton22.setChecked(false);
             question7Answer4.setVisibility(View.INVISIBLE);
         }
+
+        //Q8
         if (radioButtonLemurYes.isChecked()) {
             radioButtonLemurYes.setChecked(false);
             question8Answer1.setVisibility(View.INVISIBLE);
